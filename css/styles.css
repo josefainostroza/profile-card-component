@@ -21,63 +21,107 @@ ul {
 }
 body {
   margin: 0;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   background-color: #19a1ae;
   padding: 147px 24px;
 }
+p,h1,h2,h3{
+  margin: 0;
+}
+.image{
+  border-radius: 15px 15px 0px 0px;
+}
+
 .card {
   position: relative;
   width: 326px;
   height: 374px;
   border-radius: 15px;
   background-color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin: auto;
 }
-.image {
-  border-radius: 15px 150px 0px 0 px;
+
+.card::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 285px;
+  left: 0px;
+  width: 326px;
+  height: 1px;
+  background-color: #E8E9EC;
 }
 
 .image1 {
   position: absolute;
+  top: 92px;
+  left: 115px;
   width: 96px;
   height: 96px;
   border-radius: 100px;
-  margin: 69px;
+  border: 5px solid #fff;
+}
+
+.line-text1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .h1 {
   font-weight: 700;
   font-size: 18px;
   color: #2e3349;
+  width: 104px;
+}
+.info {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .edad {
   font-weight: 400;
   font-size: 18px;
   color: #6b7082;
+  margin-left: 8.5px;
 }
+
 .h2 {
   font-weight: 400;
   font-size: 14px;
   color: #6b7082;
+  margin-top: 8px;
 }
-.followers {
+.numeros{
   font-weight: 700;
   font-size: 18px;
   color: #2e3349;
+  margin: auto;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.likes {
-  font-weight: 700;
-  font-size: 18px;
-  color: #2e3349;
+.line-text2 {
+  width: 233px;
+  display: flex;
+  justify-content: space-between;
+margin-bottom: 24px;
 }
-.photos {
-  font-weight: 700;
-  font-size: 18px;
-  color: #2e3349;
-}
-.texts {
+
+.text {
   font-weight: 400;
   font-size: 10px;
   color: #6b7082;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+
